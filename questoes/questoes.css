@@ -1,0 +1,22 @@
+/* Somente os elementos das questões; a tela e as ferramentas vêm da prévia aprovada. */
+#cartao{justify-content:safe center;overflow-x:hidden;scrollbar-gutter:stable;gap:12px}
+#pergunta{font-size:clamp(20px,1.8vw,25px);line-height:1.35;margin:0 0 15px;overflow-wrap:anywhere}
+#itens{display:grid;gap:9px;font-size:15px;line-height:1.4;margin-bottom:12px}
+#itens:empty{display:none}#itens.associacao{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:15px}
+.coluna{display:grid;gap:9px;align-content:start}.item p{margin:0}.vf-botoes{display:flex;gap:4px;margin-bottom:4px}
+.vf-botoes button{padding:3px 11px;font-size:12px}.vf-botoes button[aria-pressed=true]{background:#e7effc;border-color:#3776b5;color:#164f8b}
+.discreto{font-size:11px;padding:4px 7px;font-weight:400;align-self:flex-start;background:transparent}
+#alternativas{display:grid;gap:7px;margin:12px 0}#alternativas button{text-align:left;font-size:15px;line-height:1.35;padding:9px 11px;font-weight:400;overflow-wrap:anywhere}
+#alternativas button:disabled{opacity:1}#alternativas .sequencia{outline:2px solid #567fc2;outline-offset:1px;background:#f1f5ff}
+#alternativas .certa{border-color:#147748;background:#ecf8ee;color:#155d34}#alternativas .errada{border-color:#b62e39;background:#fff0f0;color:#9c2734}
+.letra{font-weight:700;margin-right:8px}.etiqueta{font-size:11px;font-weight:600;display:block;margin-top:4px}
+#correcao{font-size:14px;line-height:1.45;border-top:1px solid #e1e8ed;padding-top:8px}#correcao p{margin:6px 0}#resultado{font-weight:700}#aviso-fora{color:#875217;font-weight:700}#gabarito-vf{font-weight:600}#onde{margin-top:6px}
+.study-bottom{position:relative;text-align:center;padding-top:6px}#recomecar{position:absolute;left:0;bottom:1px;border:0;color:#75838e;font-size:10px}
+#fonte figcaption{font-size:10px}#fonte-nota{font-size:10px;line-height:1.35;color:#64747f;padding-top:4px;min-height:18px}
+#fim h2{font-size:24px}#fim h3{font-size:17px}.erro{padding:10px 0;border-bottom:1px solid #e1e8ed;font-size:14px;line-height:1.4}.erro p{margin:4px 0}.erro button{font-size:11px;padding:4px 7px}#refazer,#voltar-questoes{margin-top:14px;font-size:12px}
+@media(max-width:860px){#pergunta{font-size:19px}#itens,#alternativas button{font-size:13px}#correcao{font-size:12px}#itens.associacao{gap:8px}#cartao{justify-content:flex-start}#recomecar{font-size:9px}}
+
+#identificacao,#caso-didatico{font-size:11px;color:#657681;margin:0 0 8px}#dica-texto{font-size:13px;color:#576675;margin:5px 0}#nivel-filtro{font-size:13px;max-width:100%}.highlight{background:rgba(255,218,40,.38);border-radius:2px}#cartao{justify-content:flex-start;padding-top:10px}#configurar{z-index:10}
+
+#julgar{display:flex;gap:8px;margin:8px 0}#julgar[hidden]{display:none}#ver-resposta{align-self:flex-start;margin-top:10px}#refazer-passadas{margin:14px 0 0 8px;font-size:12px}.config-scroll section{margin-bottom:14px}.config-scroll h3{font-size:15px;margin:0 0 8px}.config-scroll .option{margin:8px 0;font-size:13px}.config-scroll .option p{margin:5px 0 0;font-size:12px}#modo,#tema-filtro,#ritmo{font-size:13px;max-width:100%}
+@keyframes entrar{from{opacity:0}to{opacity:1}}#alternativas .entrando{animation:entrar .4s both}

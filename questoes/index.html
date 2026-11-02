@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>P2 · Medicina Familiar</title><link rel="stylesheet" href="estilo.css"><link rel="stylesheet" href="questoes.css?v=3"><script defer src="questoes.js"></script><script defer src="voz.js"></script><script defer src="fontes.js"></script><script defer src="texto-pdf.js"></script><script defer src="ferramentas.js"></script><script defer src="motor.js?v=6"></script></head>
+<body>
+<main>
+<section class="study" aria-label="Questão de estudo">
+<article id="cartao">
+<div id="questao"><p id="identificacao"></p><h2 id="pergunta" lang="es"></h2><p id="caso-didatico" lang="es" hidden>Caso didáctico ficticio</p><div id="itens" lang="es"></div><button id="dica" class="discreto" aria-expanded="false" aria-controls="dica-texto">Dica</button><button id="onde">Onde está</button><p id="dica-texto" hidden></p><button id="ver-alternativas" class="discreto">Ver alternativas</button><button id="ver-resposta" hidden>Ver resposta</button><div id="alternativas" lang="es" hidden></div><div id="julgar" hidden><button id="acertei" class="success">Acertei</button><button id="errei" class="danger">Errei</button></div><div id="correcao" role="status" hidden><p id="resultado"></p><p id="aviso-fora" hidden>Fora do material</p><p id="gabarito-vf" lang="es" hidden></p><p id="justificativa"></p></div></div>
+<div id="fim" hidden><h2 id="fim-titulo">Resultado</h2><p id="placar"></p><h3>Caderno de erros</h3><div id="erros"></div><button id="refazer">Refazer só os erros</button><button id="refazer-passadas">Fazer as que passei</button><button id="voltar-questoes" class="discreto">Voltar às questões</button></div>
+</article>
+<div class="study-bottom"><div class="navigation" aria-label="Navegação das questões"><button id="anterior" title="Questão anterior" aria-label="Questão anterior">«</button><button id="reproduzir" title="Tocar sozinho" aria-label="Tocar sozinho" hidden>▶</button><button id="proximo" title="Passar" aria-label="Passar">»</button></div><div id="posicao"></div><button id="recomecar" class="discreto">Recomeçar</button></div>
+</section>
+<aside class="source" aria-label="Material de apoio"><div id="fonte" tabindex="0" aria-label="Páginas do material, com rolagem própria"></div><p id="fonte-nota" role="status"></p></aside>
+</main>
+<button id="configurar" aria-label="Configurar" title="Configurar">⚙</button>
+<dialog id="config-dialog" aria-labelledby="config-title"><div class="config-top"><h2 id="config-title">Configurar</h2><button id="config-fechar" aria-label="Fechar Configurar">×</button></div><div class="config-scroll"><p id="salvamento"></p>
+<section><h3>1. O que estudar</h3>
+<div class="option"><label for="nivel-filtro">Nível</label> <select id="nivel-filtro"><option value="todos">Todos os níveis</option><option value="muito_facil">Muito fácil</option><option value="facil">Fácil</option><option value="medio">Médio</option><option value="dificil">Difícil</option></select></div>
+<div class="option"><label for="tema-filtro">Tema</label> <select id="tema-filtro"><option value="todos">Todos os temas</option></select></div>
+<div class="option"><button id="so-erradas">Refazer só as erradas</button></div>
+<div class="option"><label><input type="checkbox" id="mostrar-fonte" checked> Mostrar o material</label></div></section>
+<section><h3>2. Em que ordem</h3>
+<div class="option"><button id="ordem-tema">Ordem do material</button> <button id="embaralhar">Embaralhar</button></div></section>
+<section><h3>3. Como responder</h3>
+<div class="option"><label for="modo">Modo</label> <select id="modo"><option value="clique">Alternativas só quando eu clicar</option><option value="sempre">Alternativas sempre aparecendo</option><option value="cabeca">De cabeça, com Acertei e Errei</option><option value="auto">Automático, sem as mãos</option></select>
+<p>De cabeça: você pensa, clica em Ver resposta e marca Acertei ou Errei. Automático: aperte ▶ embaixo; a voz lê a pergunta, as alternativas aparecem, a voz lê a resposta, o trecho fica em amarelo e passa para a seguinte. Não conta ponto.</p></div>
+<div class="option" id="ritmo-linha" hidden><label for="ritmo">Pausa depois da resposta</label> <select id="ritmo"><option value="devagar">Devagar</option><option value="normal">Normal</option><option value="rapido">Rápido</option></select></div>
+<p>A seta » passa a questão sem responder. As que você passou ficam guardadas para fazer no fim.</p></section>
+<section><h3>Ferramentas do material</h3><p>Seta: selecionar texto e rolar. Raio: traço roxo temporário. Lápis e marcadores: desenhos salvos. Borracha: apagar traço. Desfazer: voltar uma ação na página visível.</p></section></div></dialog>
+<dialog id="reiniciar-dialog" aria-labelledby="reiniciar-titulo"><h2 id="reiniciar-titulo">Recomeçar as questões deste filtro?</h2><p>As respostas serão apagadas. Os desenhos no material serão mantidos.</p><button id="confirmar-reinicio">Recomeçar</button><button id="cancelar-reinicio">Cancelar</button></dialog>
+<div id="mensagem" role="status" hidden></div>
+</body></html>
